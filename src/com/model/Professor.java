@@ -49,6 +49,7 @@ public class Professor {
     public void addCourseToTeach(Course course) {
         if (!coursesToTeach.contains(course)) {
             coursesToTeach.add(course);
+            System.out.println("Se agrego curso: " + course +" al profesor: " + getName());
         }
     }
 

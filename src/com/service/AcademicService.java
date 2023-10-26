@@ -7,6 +7,7 @@ import com.model.Student;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Scanner;
 
 public class AcademicService {
 
@@ -20,9 +21,9 @@ public class AcademicService {
         }
     }
 
-    public Optional<Course> findCourseByName(String name) {
+    public Optional<Course> findCourseByCode(String code) {
         return coursesList.stream()
-                .filter(course -> course.getName().equals(name))
+                .filter(course -> course.getCode().equals(code))
                 .findAny();
     }
 
